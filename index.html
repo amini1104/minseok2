@@ -64,6 +64,82 @@
     <main>
         <section id="portfolio">
             <!-- modal -->
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item">
+                        <img src="./img/11.jpg" alt="디자인1" class="img-fluid" data-bs-toggle="modal" data-bs-target="#designModal1">
+                        <h4 class="text-center mt-2">디자인 프로젝트1</h4>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item">
+                        <img src="./img/22.jpg" alt="디자인2" class="img-fluid" data-bs-toggle="modal" data-bs-target="#designModal2">
+                        <h4 class="text-center mt-2">디자인 프로젝트2</h4>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item">
+                        <img src="./img/23.jpg" alt="디자인3" class="img-fluid" data-bs-toggle="modal" data-bs-target="#videoModal">
+                        <h4 class="text-center mt-2">영상 프로젝트1</h4>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <section id="modal-section">
+            <div class="container">
+                <div class="modal" id="designModal1" tabindex="-1"aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5>디자인 프로젝트1</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                            </div>
+                            <div class="modal-body"></div>
+                            <img src="./img/11.jpg" class="img-fluid mb-3" alt="">
+                            <p>디자인 프로젝트 1에 대한 설명을.....</p>
+                            <div class="modal-footer"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal" id="designModal2" tabindex="-1"aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5>디자인 프로젝트2</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="./img/22.jpg" class="img-fluid mb-3" alt="">
+                            </div>
+                            
+                            
+                            <div class="modal-footer">
+                                <p>디자인 프로젝트 2에 대한 설명을.....</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">영상 프로젝트 1</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="ratio ratio-16x9">
+                                  
+                                    <iframe src="https://www.youtube.com/embed/Yxf8G3SCMpU?autoplay=1&mute=1&control=1&loop=1" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            
+                            <p>디자인 프로젝트 3에 대한 설명을.....</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
     <!-- footer -->
