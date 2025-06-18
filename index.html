@@ -17,6 +17,7 @@
     <!-- favicons end-->
 
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="./css/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/app.css">
     <title>민석 포트폴리오</title>
 </head>
@@ -197,6 +198,48 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="card col-lg-3 col-md-6 col-sm-12">
+                        <a href="./card2.html" target="_blank"><img src="./img/22.jpg" class="card-img-top mt-3" alt=""></a>
+
+                        <div class="card-body">
+                            <div class="card-title">
+                                하이 민석
+                            </div>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            <div class="d-grid gap-2 d-md-flex justify-content-center">
+                                <a href="./card2.html" target="_blank"><button class="btn btn-success">자세히 보기</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card col-lg-3 col-md-6 col-sm-12">
+                        <a href="./card3.html" target="_blank"><img src="./img/23.jpg" class="card-img-top mt-3" alt=""></a>
+
+                        <div class="card-body">
+                            <div class="card-title">
+                                하이 민석
+                            </div>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            <div class="d-grid gap-2 d-md-flex justify-content-center">
+                                <a href="./card3.html" target="_blank"><button class="btn btn-success">자세히 보기</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card col-lg-3 col-md-6 col-sm-12">
+                        <a href="./card1.html" target="_blank"><img src="./img/11.jpg" class="card-img-top mt-3" alt=""></a>
+
+                        <div class="card-body">
+                            <div class="card-title">
+                                하이 민석
+                            </div>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            <div class="d-grid gap-2 d-md-flex justify-content-center">
+                                <a href="./card1.html" target="_blank"><button class="btn btn-success">자세히 보기</button></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -205,20 +248,47 @@
         <section id="portfolio">
             <!-- modal -->
             <div class="container mt-5">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item">
+                <h2 class="text-center mb-5" data-aos="fade-up" >Design & Video portfolio</h2>
+                <input type="text" id="searchInput" class="form-control" placeholder="검색어를 입력하세요...">
+
+                <!-- 분류버튼 -->
+                 <div class="text-center">
+                    <button type="button" class="mt-5 btn btn-primary filter-btn" data-filter="all">전체</button>
+                    <button type="button" class="mt-5 btn btn-primary filter-btn" data-filter="design">디자인</button>
+                    <button type="button" class="mt-5 btn btn-primary filter-btn" data-filter="video">영 상</button>
+                    <button type="button" class="mt-5 btn btn-primary filter-btn" data-filter="figma">피그마</button>
+                </div>    
+
+                <!-- 포트폴리오 아이템 -->
+                <div class="row mt-5">
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-catagory="design" data-aos="fade-up">
                         <img src="./img/11.jpg" alt="디자인1" class="img-fluid" data-bs-toggle="modal" data-bs-target="#designModal1">
                         <h4 class="text-center mt-2">디자인 프로젝트1</h4>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item">
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-catagory="design" data-aos="fade-up">
                         <img src="./img/22.jpg" alt="디자인2" class="img-fluid" data-bs-toggle="modal" data-bs-target="#designModal2">
                         <h4 class="text-center mt-2">디자인 프로젝트2</h4>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item">
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-catagory="video" data-aos="fade-up">
                         <img src="./img/23.jpg" alt="디자인3" class="img-fluid" data-bs-toggle="modal" data-bs-target="#videoModal">
                         <h4 class="text-center mt-2">영상 프로젝트1</h4>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-catagory="video" data-aos="fade-up">
+                        <img src="./img/23.jpg" alt="비디오2" class="img-fluid" data-bs-toggle="modal" data-bs-target="#videoModal2">
+                        <h4 class="text-center mt-2">영상 프로젝트2</h4>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-catagory="figma" data-aos="fade-up">
+                        <img src="./img/23.jpg" alt="피그마" class="img-fluid" data-bs-toggle="modal" data-bs-target="#figmaModal">
+                        <h4 class="text-center mt-2">피그마 프로젝트1</h4>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-catagory="figma" data-aos="fade-up">
+                        <img src="./img/23.jpg" alt="피그마2" class="img-fluid" data-bs-toggle="modal" data-bs-target="#figmaModal2">
+                        <h4 class="text-center mt-2">피그마 프로젝트2</h4>
                     </div>
                 </div>
             </div> 
@@ -278,6 +348,60 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="modal fade" id="videoModal2" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">영상 프로젝트 2</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="ratio ratio-16x9">
+                                  
+                                    <iframe src="https://www.youtube.com/embed/Yxf8G3SCMpU?autoplay=1&mute=1&control=1&loop=1" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            
+                            <p>영상 프로젝트2에 대한 설명을.....</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="figmaModal" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">피그마 프로젝트 1</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                
+                                  
+                                <img src="./img/11.jpg" class="img-fluid" alt="">
+                               
+                            </div>
+                            
+                            <p>디자인 프로젝트 3에 대한 설명을.....</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="figmaModal2" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">피그마 프로젝트 2</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="./img/22.jpg" class="img-fluid" alt="">
+                            </div>
+                            
+                            <p>디자인 프로젝트 3에 대한 설명을.....</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </section>
@@ -294,6 +418,7 @@
 
     <!-- footer end -->
 <script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/aos.js"></script>
 <script src="./js/app.js"></script>    
 </body>
 </html>
